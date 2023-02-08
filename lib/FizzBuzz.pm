@@ -5,7 +5,42 @@ use warnings;
 
 our $VERSION = "0.01";
 
+sub new {
+    my $class    = shift;
+    my $hash_ref = {};
+    my $self     = bless $hash_ref, $class;
+    return $self;
+}
 
+sub list {
+    my $self = shift;
+
+    my @array = ();
+    for my $n ( 1 .. 100 ) {
+        push @array, $self->check_fizzbuzz($n);
+    }
+
+    return @array;
+}
+
+sub check_fizzbuzz {
+    my $self = shift;
+    my $n    = shift;
+
+    if ( $n % 3 == 0 && $n % 5 == 0 ) {
+        return 'FizzBuzz';
+    }
+    elsif ( $n % 3 == 0 ) {
+        return 'Fizz';
+    }
+    elsif ( $n % 5 == 0 ) {
+        return 'Buzz';
+    }
+    else {
+        return $n;
+    }
+
+}
 
 1;
 __END__

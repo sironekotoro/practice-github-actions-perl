@@ -52,6 +52,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/sironekotoro/practice-github-actions-perl/issues"
+      },
+      "homepage" : "https://github.com/sironekotoro/practice-github-actions-perl",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/sironekotoro/practice-github-actions-perl.git",
+         "web" : "https://github.com/sironekotoro/practice-github-actions-perl"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "JSON::PP version 4.07",
    "x_static_install" : 1

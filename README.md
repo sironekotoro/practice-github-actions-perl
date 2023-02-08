@@ -1,4 +1,4 @@
-
+[![Actions Status](https://github.com/sironekotoro/practice-github-actions-perl/actions/workflows/test.yml/badge.svg)](https://github.com/sironekotoro/practice-github-actions-perl/actions)
 # NAME
 
 FizzBuzz - It's new $module
